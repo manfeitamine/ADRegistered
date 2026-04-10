@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <title>ADRegistered</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -24,7 +25,7 @@
             font-weight: 400;
             font-size: 1rem;
             letter-spacing: 0.2em;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             text-transform: uppercase;
         }
 
@@ -35,13 +36,16 @@
         }
 
         img { 
-            /* 縮小 40%，即寬度設為 60% */
-            width: 60%; 
-            max-width: 500px;
+            width: 40%; 
             height: auto; 
             display: block;
-            /* 移除深色陰影，改為極細邊框或不加 */
-            border: 1px solid #f0f0f0;
+            border: 1px solid #eeeeee;
+        }
+
+        @media (max-width: 600px) {
+            img {
+                width: 70%;
+            }
         }
     </style>
 </head>
