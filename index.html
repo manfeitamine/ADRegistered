@@ -8,8 +8,8 @@
     <style>
         body { 
             margin: 0; 
-            background-color: #000; 
-            color: #fff;
+            background-color: #ffffff; 
+            color: #000000;
             font-family: 'JetBrains Mono', 'Lucida Console', monospace; 
             display: flex; 
             flex-direction: column;
@@ -24,22 +24,24 @@
             font-weight: 400;
             font-size: 1rem;
             letter-spacing: 0.2em;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             text-transform: uppercase;
         }
 
         .container {
             width: 100%;
-            max-width: 600px;
             display: flex;
             justify-content: center;
         }
 
         img { 
-            width: 100%; 
+            /* 縮小 40%，即寬度設為 60% */
+            width: 60%; 
+            max-width: 500px;
             height: auto; 
             display: block;
-            border: 1px solid #222;
+            /* 移除深色陰影，改為極細邊框或不加 */
+            border: 1px solid #f0f0f0;
         }
     </style>
 </head>
